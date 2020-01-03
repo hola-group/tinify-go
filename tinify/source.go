@@ -133,3 +133,7 @@ func (s *Source) toResult() (r *Result, err error) {
 	r = NewResult(response.Header, data)
 	return
 }
+
+func (s *Source) GetResult() (r *Result, err error) {
+	return s.toResult()
+}
