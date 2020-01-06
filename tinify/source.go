@@ -137,3 +137,7 @@ func (s *Source) toResult() (r *Result, err error) {
 func (s *Source) GetResult() (r *Result, err error) {
 	return s.toResult()
 }
+
+func (s *Source) GetUrl() string {
+	return s.url
+}
